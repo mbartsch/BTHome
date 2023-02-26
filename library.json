@@ -1,0 +1,19 @@
+{
+  "name": "BTHome",
+  "version": "0.1.0",
+  "description": "BTHome V2 protocol implementation",
+  "keywords": "BTHome, bluetooth",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/ilia-ametov/BTHome.git"
+  },
+  "authors": {
+    "name": "Ilia Ametov",
+    "email": "iliaa.soft@gmail.com"
+  },
+  "license": "MIT",
+  "frameworks": "*",
+  "platforms": "*",
+  "headers": "BTHome.h"
+}
