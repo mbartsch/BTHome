@@ -56,6 +56,16 @@ namespace bthome
 		this->addServiceDataItem(DataType::genericBoolean, data);
 	}
 
+	void PayloadBuilder::addPm2p5(uint16_t const data)
+	{
+		this->addServiceDataItem(DataType::pm2p5, data);
+	}
+
+	void PayloadBuilder::addPm10(uint16_t const data)
+	{
+		this->addServiceDataItem(DataType::pm10, data);
+	}
+
 	std::string PayloadBuilder::getAdvertisingPayload()
 	{
 		std::string advertisingPayload = "";
@@ -127,6 +137,8 @@ namespace bthome
 			case DataType::temperature:
 			case DataType::humidity:
 			case DataType::tvoc:
+			case DataType::pm2p5:
+			case DataType::pm10:
 				serviceData += (char)(this->serviceDataPayload[i].dataValue & 0xFF);
 				serviceData += (char)((this->serviceDataPayload[i].dataValue >> 8) & 0xFF);
 				serviceDataSize += 2;
