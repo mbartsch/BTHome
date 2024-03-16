@@ -6,11 +6,11 @@
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/ilia-ametov/BTHome.git"
+    "url": "https://github.com/mbartsch/BTHome.git"
   },
   "authors": {
-    "name": "Ilia Ametov",
-    "email": "iliaa.soft@gmail.com"
+    "name": "Marcelo Bartscg",
+    "email": "marcelo@bartsch.cl"
   },
   "license": "MIT",
   "frameworks": "*",
