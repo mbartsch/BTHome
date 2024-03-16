@@ -244,7 +244,7 @@ namespace bthome
 		void addPm10(uint16_t const data);
 		void addVolume(uint16_t const data);
 		void addVolume(uint32_t const data);
-		void addWater(uint16_t const data);
+		void addWater(uint32_t const data);
 		std::string getAdvertisingPayload();
 		void resetServiceData();
 
