@@ -151,6 +151,10 @@ namespace bthome
 			case DataType::count2:
 			case DataType::temperature:
 			case DataType::humidity:
+			case DataType::volume1:
+			case DataType::volume2:
+			case DataType::volume3:
+			case DataType::water:
 			case DataType::tvoc:
 			case DataType::pm2p5:
 			case DataType::pm10:
