@@ -66,6 +66,21 @@ namespace bthome
 		this->addServiceDataItem(DataType::pm10, data);
 	}
 
+	void PayloadBuilder::addVolume(uint32_t const data)
+	{
+		this->addServiceDataItem(DataType::volume1, data);
+	}
+	
+	void PayloadBuilder::addVolume(uint16_t const data)
+	{
+		this->addServiceDataItem(DataType::volume2, data);
+	}
+
+	void PayloadBuilder::addWater(uint16_t const data)
+	{
+		this->addServiceDataItem(DataType::water, data);
+	}
+
 	std::string PayloadBuilder::getAdvertisingPayload()
 	{
 		std::string advertisingPayload = "";

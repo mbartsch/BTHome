@@ -189,6 +189,34 @@ namespace bthome
 		// Result:		13.39
 		// Unit:		A
 		tvoc = 0x13,
+
+		// Data type:	uint32 (4 byte)
+		// Factor:		0.001
+		// Example:		4E87562A01
+		// Result:		19551.879
+		// Unit:		L
+		volume1 = 0x4E,
+    	
+		// Data type:	uint16 (2 byte)
+		// Factor:		0.1
+		// Example:		478756
+		// Result:		2215.1
+		// Unit:		L
+		volume2 = 0x47,
+    	
+		// Data type:	uint16 (2 byte)
+		// Factor:		1
+		// Example:		48DC87
+		// Result:		34780
+		// Unit:		mL
+		volume3 = 0x48,
+    	
+		// Data type:	uint32 (4 bytes)
+		// Factor:		0.001
+		// Example:		4E87562A01
+		// Result:		19551.879
+		// Unit:		L
+		water = 0x4F,
 	};
 
 	struct ServiceDataItem
@@ -214,6 +242,9 @@ namespace bthome
 		void addGenericBoolean(bool const data);
 		void addPm2p5(uint16_t const data);
 		void addPm10(uint16_t const data);
+		void addVolume(uint16_t const data);
+		void addVolume(uint32_t const data);
+		void addWater(uint16_t const data);
 		std::string getAdvertisingPayload();
 		void resetServiceData();
 
